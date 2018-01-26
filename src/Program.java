@@ -10,15 +10,15 @@ public class Program {
         Random rand=new Random();
 
         for (int i = 0; i < tab.length; i++) {
-        tab[i]=rand.nextInt(100);
+        tab[i]=rand.nextInt(10);
+        System.out.print(tab[i]);
         }
 
         for (int i = tab.length-1; i >= 0; i--) {
         tabRevers[j]=tab[i];
+        System.out.print(tabRevers[j]);
         j++;
         }
-
-        System.out.println(Arrays.toString(tab));
-        System.out.println(Arrays.toString(tabRevers));
+        
     }
 }

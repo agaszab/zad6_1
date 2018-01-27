@@ -6,19 +6,19 @@ public class Program {
 
         int[] tab=new int[10];
         int[] tabRevers=new int[10];
-        int j=0;
+        int j=9;
         Random rand=new Random();
 
         for (int i = 0; i < tab.length; i++) {
         tab[i]=rand.nextInt(10);
-        System.out.print(tab[i]);
+        tabRevers[j]=tab[i];
+        j--;
         }
 
-        for (int i = tab.length-1; i >= 0; i--) {
-        tabRevers[j]=tab[i];
-        System.out.print(tabRevers[j]);
-        j++;
-        }
-        
+        System.out.print(Arrays.toString(tab));
+        System.out.print(Arrays.toString(tabRevers));
+
+
+
     }
 }

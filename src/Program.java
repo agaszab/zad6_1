@@ -13,7 +13,7 @@ public class Program {
                 tab[i] = rand.nextInt(10);
                 System.out.print(tab[i] + " ");
             }
-            if (i > tab.length) {
+            if (i >= tab.length) {
                 System.out.print(tab[(tab.length -1)- j] + " ");
                 j++;
 
